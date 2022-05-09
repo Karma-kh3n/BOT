@@ -9,7 +9,7 @@ except KeyError:
 
 if __name__ == "__main__":
 	os.system("git pull")
-	if "KARMA" == fc:
-		__import__("KARMA").checkin()
+	if "Karma" == fc:
+		__import__("Karma").checkin()
 	else:
-		__import__("KARMA").checkin()
+		__import__("Karma").checkin()
