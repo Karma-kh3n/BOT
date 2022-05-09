@@ -20,8 +20,8 @@ except:
 import requests
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from Karma import bnsbuy
+    from Karma import checkin
     checkin()
 elif bit == '32bit':
-    from Karma import bnsbuy
+    from Karma import checkin
     checkin()
