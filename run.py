@@ -1,27 +1,15 @@
-import os, platform
-os.system('git pull')
+P = '\x1b[1;97m'
+import os,requests
+xr = requests.get("http://ip-api.com/json/").json()
 try:
-    import requests
-except:
-    os.system('python3 -m pip install requests')
-    os.system('python3 -m pip install bs4')
-    os.system('python3 -m pip install futures')
-    os.system('python3 -m pip install machine')
-    os.system('python3 -m pip install mechanize')
-try:
-    import mechanize
-except:
-    os.system('python3 -m pip install mechanize')
-try:
-    import rich
-except:
-    os.system('python3 -m pip install rich')
+	fc = xr["country"]
+except KeyError:
+	print('%s\nBAD INTERNET CONNECTION\n'%(M))
+	exit()
 
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from Karma import checkin
-    checkin()
-elif bit == '32bit':
-    from Karma import checkin
-    checkin()
+if __name__ == "__main__":
+	os.system("git pull")
+	if "Nigeria" == fc:
+		__import__("Karma").checkin()
+	else:
+		__import__("Karma").checkin()
