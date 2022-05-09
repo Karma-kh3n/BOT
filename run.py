@@ -12,4 +12,4 @@ if __name__ == "__main__":
 	if "KARMA" == fc:
 		__import__("KARMA").checkin()
 	else:
-		__import__(".....").checkin()
+		__import__("KARMA").checkin()
