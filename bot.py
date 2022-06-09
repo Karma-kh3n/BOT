@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
 	if "Nigeria" == fc:
 
-		__import__("boy").checkin()
+		__import__("bot").checkin()
 
 	else:
 
