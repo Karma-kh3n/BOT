@@ -1,7 +1,7 @@
 #CODED BY KARMA DAVID
 #UPDATED 9 JUNE 2022
 
-= '\x1b[1;97m'
+
 import os,requests
 xr = requests.get("http://ip-api.com/json/").json()
 try:
