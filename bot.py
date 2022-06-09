@@ -2,17 +2,14 @@
 #UPDATED 9 JUNE 2022
 
 
-import os,requests
-xr = requests.get("http://ip-api.com/json/").json()
-try:
-	fc = xr["country"]
-except KeyError:
-	print('%s\nBAD INTERNET CONNECTION\n'%(M))
-	exit()
-
-if __name__ == "__main__":
-	os.system("git pull")
-	if "Nigeria" == fc:
-		__import__("bot").checkin()
-	else:
-		__import__("bot").checkin()
+import platform
+import os
+os.system('git pull')
+except:pass
+arc = str(platform.uname().machine)
+if 'arm' in arc:
+	__import__("bot").checkin()
+elif 'aarch' in arc:
+	__import__("bot").checkin()
+else:
+	exit(f' Unknow device machine {arc}')
