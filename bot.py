@@ -2,14 +2,27 @@
 #UPDATED 9 JUNE 2022
 
 
-import platform
-import os
+import os, platform
 os.system('git pull')
+try:
+    import requests
+except:
+    os.system('python3 -m pip install requests')
+    os.system('python3 -m pip install bs4')
+    os.system('python3 -m pip install futures')
+    os.system('python3 -m pip install machine')
+    os.system('python3 -m pip install mechanize')
+try:
+    import mechanize
+except:
+    os.system('python3 -m pip install mechanize')
+try:
+    import rich
+except:
+    os.system('python3 -m pip install rich')
 
-arc = str(platform.uname().machine)
-if 'arm' in arc:
-	__import__("bot").checkin()
-elif 'aarch' in arc:
-	__import__("bot").checkin()
-else:
-	exit(f' Unknow device machine {arc}')
+import requests
+bit = platform.architecture()[0]
+if bit == '64bit':
+    from bot import bot
+    checkin()
