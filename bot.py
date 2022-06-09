@@ -1,28 +1,27 @@
-#CODED BY KARMA DAVID
-#UPDATED 9 JUNE 2022
+#P = '\x1b[1;97m'
 
+import os,requests
 
-import os, platform
-os.system('git pull')
-try:
-    import requests
-except:
-    os.system('python3 -m pip install requests')
-    os.system('python3 -m pip install bs4')
-    os.system('python3 -m pip install futures')
-    os.system('python3 -m pip install machine')
-    os.system('python3 -m pip install mechanize')
-try:
-    import mechanize
-except:
-    os.system('python3 -m pip install mechanize')
-try:
-    import rich
-except:
-    os.system('python3 -m pip install rich')
+xr = requests.get("http://ip-api.com/json/").json()
 
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from bot import bot
-    checkin()
+try:
+
+	fc = xr["country"]
+
+except KeyError:
+
+	print('%s\nBAD INTERNET CONNECTION\n'%(M))
+
+	exit()
+
+if __name__ == "__main__":
+
+	os.system("git pull")
+
+	if "Nigeria" == fc:
+
+		__import__("boy").checkin()
+
+	else:
+
+		__import__("bot").checkin()
