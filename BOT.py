@@ -11,6 +11,6 @@ except KeyError:
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
-		__import__("BOT")license()
+		__import__("BOT").license()
 	else:
-		__import__("BOT")license()
+		__import__("BOT").license()
