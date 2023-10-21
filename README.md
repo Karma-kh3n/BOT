@@ -32,7 +32,7 @@ git pull
 
 ```
 #### RESULTS IG FB:
-![template_s](https://github.com/Karma-kh3n/SUPREME/blob/main/Screenshot_20220306-221205_Gallery.jpg)
+![template_s](https://github.com/Karma-kh3n/BOT/blob/main/Screenshot_20231021-134622.jpg)
 * Notice me: *LEGENDARY BOT*
 #### MY SOCIAL MEDIA
 
