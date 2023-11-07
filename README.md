@@ -1,5 +1,5 @@
 # BOT
-IG
+IG Tool
 #                     LEGENDARY BOT
 IG Command
 <h1 align="center">
